@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardElevation="4dp">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Note Title"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          android:layout_toLeftOf="@id/idIVDelete"
+          android:layout_margin="4dp"
+          android:padding="4dp"
+          android:id="@+id/idTVNoteTitle"
+          />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/idTVTimeStamp"
+          android:layout_toLeftOf="@id/idIVSeen"
+          android:text="TimeStamp"
+          android:layout_below="@id/idTVNoteTitle"
+          android:layout_margin="4dp"
+          android:padding="4dp"
+          />
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/idIVDelete"
+          android:src="@drawable/ic_delete"
+          app:tint="@color/black"
+          android:layout_margin="5dp"
+          android:padding="4dp"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+
+          />
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/idIVSeen"
+          android:src="@drawable/ic_detail"
+          android:layout_below="@id/idTVTimeStamp"
+          android:layout_margin="5dp"
+          android:padding="4dp"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+
+          />
+
+  </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
